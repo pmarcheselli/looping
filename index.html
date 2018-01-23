@@ -53,12 +53,19 @@
 
     // TODO: set howMany variable to a value user inputs
     var howMany
-
+    howMany = prompt("How many rollercoaster rides would you like to go on?");
+    console.log("Get ready to go on" , howMany , "rides!")
+    
     var counter = 1;
-
+    
     // TODO: execute this loop the number of times user requested
-    while(false){
+    
+    while(counter < howMany){
       console.log("Wheee! This is the ", counter, " time we've done this!");
+    
+    
+//    while(false){
+//      console.log("Wheee! This is the ", counter, " time we've done this!");
 
       // find value of counter modulo length of sources array-
       // this value will increase by one on each iteration of the loop,
@@ -68,6 +75,7 @@
       theImg.setAttribute("src", imageSources[theOne]);
 
       // TODO: increment the counter
+    counter = counter + 1
     }
 
     // EXTRA CHALLENGES:
